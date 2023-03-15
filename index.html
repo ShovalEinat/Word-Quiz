@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Quiz</title>
+    <link href="wordQuiz.css" rel="stylesheet">
+    <link rel="icon" type="image.png" href="siteLogo.png">
+</head>
+<body>  
+  <form>
+        <label for="word">Word:</label>
+        <input type="text" id="word" name="word" placeholder="WORD"input>
+        <label for="translation">Translation:</label>
+        <input type="text" id="translation" name="translation" placeholder="מילה">
+        <button type="submit" id="submit">Add Word</button>
+        <button id="finish">Finish</button>
+      </form>
+      
+      <div id="quiz">
+        <div id="quiz-section" style="display:none;">
+          <h2>Translate the following words:</h2>
+          <ul id="quiz-words"></ul>
+          <button id="check">Ask me!</button>
+        </div>
+        
+        <div id="results-section" style="display:none;">
+          <h2>Results:</h2>
+          <ul id="results"></ul>
+        </div>  
+      </div>
+
+      <script src="wordQuiz.js"></script>
+
+</body>
+</html>
